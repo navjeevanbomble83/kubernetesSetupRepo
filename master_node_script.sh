@@ -60,3 +60,6 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 # Install Calico
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.29.3/manifests/calico.yaml
+
+# generate token
+kubeadm token create --print-join-command
